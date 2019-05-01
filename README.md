@@ -14,10 +14,10 @@ Aura pour representation en liste d'adjacence:
 
 ```
 {
-  '1': ['2'],
-  '2': ['4'],
-  '3': ['2', '4'],
-  '4': ['3']
+  "1": ["2"],
+  "2": ["4"],
+  "3": ["2", "4"],
+  "4": ["3"]
 }
 ```
 
@@ -27,3 +27,13 @@ Ainsi vous pouvez donc lancer le code de recherche des CFC de votre graphe
 ```
 py cfc.py
 ```
+
+Le resultat est donc:
+
+```
+[['1'], ['2', '3', '4']]
+```
+
+qui signifie que le graphe a 2 CFC:
+- un CFC qui est le sous-graphe composé du sommet _x1_
+- un CFC qui est le sous-graphe composé des sommets _x2_, _x3_, _x4_
